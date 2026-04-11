@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "jira-distiller": {
+      "command": "python",
+      "args": ["/absolute/path/to/jira_distiller.py"],
+      "env": {
+        "ANTHROPIC_API_KEY": "your-api-key-here",
+        "JIRA_EMAIL": "you@yourcompany.com",
+        "JIRA_TOKEN": "your-jira-token-here"
+      }
+    },
+    "aider-bridge": {
+      "command": "python",
+      "args": ["/absolute/path/to/aider_bridge.py"],
+      "env": {
+        "OPENAI_API_KEY": "your-api-key-here",
+        "OPENAI_API_BASE": "https://api.z.ai/api/openai",
+        "ARCHITECT_MODEL": "openai/glm-4.7",
+        "EDITOR_MODEL": "openai/glm-4.5-air"
+      }
+    }
+  }
+}
